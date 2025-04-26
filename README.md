@@ -19,6 +19,7 @@ GrowCRM is a comprehensive management system designed to streamline the processe
 ## Tech Stack
 
 - **Frontend**:
+
   - React.js
   - Material UI
   - Tailwind CSS
@@ -32,50 +33,60 @@ GrowCRM is a comprehensive management system designed to streamline the processe
 
 Check out the live demo of crm [here](https://growmarketing.netlify.app/).
 
-
 ## Installation and Setup
 
 1. **Clone the Repository**: Use `git clone` to clone this repository to your local machine.
+
    ```bash
    git clone https://github.com/naumanch969/crm.git
    ```
 
 2. Install Dependencies
-There are two main directories inside this project: client for the frontend and server for the backend. You'll need to install dependencies for both.
+   There are two main directories inside this project: client for the frontend and server for the backend. You'll need to install dependencies for both.
 
 a. Frontend (Client)
 
 Navigate to the client directory:
-   ```bash
-   cd crm/client
-   ```
+
+```bash
+cd crm/client
+```
+
 Install the required dependencies using npm:
-   ```bash
-   npm install --legacy-peer-deps
-   ```
+
+```bash
+npm install --legacy-peer-deps
+```
+
 Start the frontend development server:
-   ```bash
-   npm run dev
-   ```
+
+```bash
+npm run dev
+```
 
 b. Backend (Server)
 
 Navigate to the server directory:
-   ```bash
-   cd crm/server
-   ```
+
+```bash
+cd crm/server
+```
+
 Install the backend dependencies:
-   ```bash
-   npm install --legacy-peer-deps
-   ```
+
+```bash
+npm install --legacy-peer-deps
+```
+
 Start the backend development server:
-   ```bash
-   npm run dev
-   ```
+
+```bash
+npm run dev
+```
 
 3. Configure Environment Variables
-In both the client and server directories, create a .env file in the root directory.
-Define the necessary environment variables for both the frontend and backend. Samples can be found in .env.example file
+   In both the client and server directories, create a .env file in the root directory.
+   Define the necessary environment variables for both the frontend and backend. Samples can be found in .env.example file
 
 4. **Start the Development Server**:
    - After installing dependencies and configuring environment variables, start the development server:
@@ -87,26 +98,32 @@ Define the necessary environment variables for both the frontend and backend. Sa
 ## Usage
 
 1. **Login and Authentication**:
+
    - Use the provided login credentials or create a new account to access the system.
    - Authenticate users based on their roles and permissions.
 
 2. **Lead Management**:
+
    - Capture and manage leads through the sales pipeline.
    - Track lead status, interactions, and conversion metrics.
 
 3. **Project and Inventory Management**:
+
    - Organize and manage projects, societies, and inventory listings.
    - Maintain detailed records of properties, units, and amenities.
 
 4. **Task Management**:
+
    - Assign tasks, set deadlines, and track progress.
    - Collaborate with team members and allocate resources efficiently.
 
 5. **Invoices and Cashflow Management**:
+
    - Generate invoices, track payments, and manage cashflow.
    - Monitor revenue, expenses, and financial performance.
 
 6. **Notifications and Alerts**:
+
    - Receive real-time notifications for important updates, reminders, and events.
    - Stay informed and proactive in managing tasks and deadlines.
 
@@ -123,9 +140,27 @@ Have questions or feedback? Feel free to reach out to me:
 - Email: naumanch969@gmail.com
 - LinkedIn: [My LinkedIn Profile](https://www.linkedin.com/in/naumanch)
 
-
-Feel free to explore, test, and customize GrowCRM to meet the specific needs of your real estate agency. If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request. 
+Feel free to explore, test, and customize GrowCRM to meet the specific needs of your real estate agency. If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
 
 Happy managing!
 
+---
 
+admin1234
+
+```sh
+{
+  "password": "$2b$10$Oc9yXMC5K.Dw4cP4P2SUXuILUsaWi9vtPZOksfmDkLHBzI8GtIGq.",
+  "firstName": "Test",
+  "lastName": "Test",
+  "username": "faizan11",
+  "phone": "9784354333",
+  "city": "Kolkata",
+  "CNIC": "65671-1742567-3",
+  "email": "example@gmail.com",
+  "role": "super_admin",
+  "uid": "admin001"
+}
+
+
+```

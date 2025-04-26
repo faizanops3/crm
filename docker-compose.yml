@@ -1,0 +1,42 @@
+version: "3.9"
+
+services:
+  mongo:
+    image: mongo:6
+    container_name: growcrm_mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: growcrm
+    volumes:
+      - mongo-data:/data/db
+
+  server:
+    build: ./server
+    container_name: growcrm_server
+    restart: always
+    ports:
+      - "4000:4000"
+    environment:
+      - ATLAS_URL=mongodb://mongo:27017/growcrm
+      - PORT=4000
+      - SUPER_ADMIN_USERNAME=faizan
+      - MANAGER_USERNAME=faizan
+      - JWT_SECRET=supersecret
+      - SENDER_EMAIL=""
+      - SENDER_EMAIL_PASSWORD=""
+    depends_on:
+      - mongo
+
+  client:
+    build: ./client
+    container_name: growcrm_client
+    restart: always
+    ports:
+      - "3000:80"
+    depends_on:
+      - server
+
+volumes:
+  mongo-data:
