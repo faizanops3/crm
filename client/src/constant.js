@@ -1,6 +1,6 @@
-export const baseURL = 'http://localhost:4000/api/v1'
+export const baseURL = 'http://98.70.50.135:4000/api/v1'
 // export const baseURL = 'https://growmarketing.glitch.me/api/v1'
-export const rootURL = 'http://localhost:4000'
+export const rootURL = 'http://98.70.50.135:4000'
 // export const rootURL = 'https://growmarketing.glitch.me'
 export const pakistanCities = [
   "Abbottabad",
