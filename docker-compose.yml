@@ -36,7 +36,7 @@ services:
     environment:
       - VITE_APP_BASE_URL=http://server:4000
     ports:
-      - "5173:80"
+      - "5173:5173"
     depends_on:
       - server
 
