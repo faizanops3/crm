@@ -13,7 +13,7 @@ read -r -d '' SUPER_ADMIN_JSON <<EOF
   "lastName": "Test",
   "username": "faizan11",
   "phone": "9784354333",
-  "city": "Kolkata",
+  "city": "hyderabad",
   "CNIC": "65671-1742567-3",
   "email": "example@gmail.com",
   "role": "super_admin",
