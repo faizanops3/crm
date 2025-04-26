@@ -11,7 +11,7 @@ read -r -d '' SUPER_ADMIN_JSON <<EOF
   "password": "$2b$10$Oc9yXMC5K.Dw4cP4P2SUXuILUsaWi9vtPZOksfmDkLHBzI8GtIGq.",
   "firstName": "Test",
   "lastName": "Test",
-  "username": "faizan11",
+  "username": "admin",
   "phone": "9784354333",
   "city": "hyderabad",
   "CNIC": "65671-1742567-3",
