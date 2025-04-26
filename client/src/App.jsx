@@ -37,10 +37,6 @@ import VoucherPage from "./Pages/Vouchers/VoucherPage";
 import Home from "./Client Panel/Home";
 import TranscriptPage from "./Pages/Transcript/TranscriptPage";
 
-import dotenv from 'dotenv';
-
-dotenv.config();
-
 const App = () => {
   ///////////////////////////////////// VARIABLES ////////////////////////////////////////
   const { loggedUser } = useSelector((state) => state.user);
