@@ -1,40 +1,27 @@
-FROM nginx:alpine
+# Base image
+FROM node:20
 
-WORKDIR /usr/share/nginx/html
+WORKDIR /app
 
-RUN rm -rf ./*
+COPY package*.json ./
+RUN npm install --legacy-peer-deps
 
-ARG dist
-COPY dist/ .
+COPY . .
 
-# COPY nginx.conf /etc/nginx/nginx.conf
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+EXPOSE 5173
 
-EXPOSE 80
-
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["npm", "run", "dev"] 
 
 
-
-
-
-
-
-
-
-
-
-# FROM node:20 as builder
-
-# WORKDIR /app
-# COPY package*.json ./
-# RUN npm install --legacy-peer-deps
-# COPY . .
-# RUN npm run build
 
 # FROM nginx:alpine
 
-# COPY --from=builder /app/dist /usr/share/nginx/html
+# WORKDIR /usr/share/nginx/html
+
+# RUN rm -rf ./*
+
+# ARG dist
+# COPY dist/ .
 
 # # COPY nginx.conf /etc/nginx/nginx.conf
 # COPY nginx.conf /etc/nginx/conf.d/default.conf
@@ -42,3 +29,14 @@ CMD ["nginx", "-g", "daemon off;"]
 # EXPOSE 80
 
 # CMD ["nginx", "-g", "daemon off;"]
+
+
+
+
+
+
+
+
+
+
+

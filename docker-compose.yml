@@ -33,8 +33,10 @@ services:
     build: ./client
     container_name: growcrm_client
     restart: always
+    environment:
+      - VITE_APP_BASE_URL=http://server:4000
     ports:
-      - "3000:80"
+      - "5173:80"
     depends_on:
       - server
 
