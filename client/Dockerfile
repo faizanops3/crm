@@ -1,34 +1,35 @@
-# Base image
-FROM node:20
+# # Base image
+# FROM node:20
 
-WORKDIR /app
+# WORKDIR /app
 
-COPY package*.json ./
-RUN npm install --legacy-peer-deps
+# COPY package*.json ./
+# RUN npm install --legacy-peer-deps
 
-COPY . .
+# COPY . .
 
-EXPOSE 5173
+# EXPOSE 5173
 
-CMD ["npm", "run", "dev"] 
+# CMD ["npm", "run", "dev"] 
 
 
 
-# FROM nginx:alpine
+FROM nginx:alpine
 
-# WORKDIR /usr/share/nginx/html
+WORKDIR /usr/share/nginx/html
 
-# RUN rm -rf ./*
+RUN rm -rf ./*
 
-# ARG dist
-# COPY dist/ .
+ARG dist
+COPY dist/ .
 
-# # COPY nginx.conf /etc/nginx/nginx.conf
+# COPY nginx.conf /etc/nginx/nginx.conf
 # COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY nginx.conf /etc/nginx/nginx.conf
 
-# EXPOSE 80
+EXPOSE 80
 
-# CMD ["nginx", "-g", "daemon off;"]
+CMD ["nginx", "-g", "daemon off;"]
 
 
 
