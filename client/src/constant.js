@@ -1,6 +1,10 @@
-export const baseURL = process.env.REACT_APP_BASE_URL;
-export const rootURL = process.env.REACT_APP_ROOT_URL;
-// export const rootURL = 'https://growmarketing.glitch.me'
+// export const baseURL = process.env.REACT_APP_BASE_URL;
+// export const rootURL = process.env.REACT_APP_ROOT_URL;
+
+export const baseURL = 'http://98.70.50.135:4000/api/v1';
+export const rootURL = 'http://98.70.50.135:4000';
+
+
 export const pakistanCities = [
   "Abbottabad",
   "Adilpur",
