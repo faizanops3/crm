@@ -146,6 +146,7 @@ Happy managing!
 
 ---
 
+admin11
 admin1234
 
 ```sh
@@ -153,13 +154,15 @@ admin1234
   "password": "$2b$10$Oc9yXMC5K.Dw4cP4P2SUXuILUsaWi9vtPZOksfmDkLHBzI8GtIGq.",
   "firstName": "Test",
   "lastName": "Test",
-  "username": "faizan11",
+  "username": "admin11",
   "phone": "9784354333",
   "city": "hyderabad",
   "CNIC": "65671-1742567-3",
   "email": "example@gmail.com",
   "role": "super_admin",
-  "uid": "admin001"
+  "uid": "admin001",
+  "createdAt": "2025-04-27T07:18:50.993+00:00",
+  "updatedAt": "2025-04-27T07:18:50.993+00:00"
 }
 
 
